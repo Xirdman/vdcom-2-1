@@ -65,6 +65,11 @@ public class MtgPlayerController {
             return "Клиент не добавлен";
         }
     }
+
+    /**
+     *
+     * @param fileName name of the file to load
+     */
     @GetMapping("/load")
     public void loadCsvFile(@RequestParam(defaultValue = "NewMtgPlayers.csv") String fileName){
         try {
