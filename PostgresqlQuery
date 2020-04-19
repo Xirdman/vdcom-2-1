@@ -1,0 +1,13 @@
+CREATE TABLE mtgplayers(
+	id serial UNIQUE PRIMARY KEY,
+    firstname VARCHAR(30),
+    lastname VARCHAR(30),
+    dcinumber VARCHAR(12)
+);
+INSERT INTO mtgplayers (firstname, lastname, dcinumber) values
+	('Алексадр', 'Матвеев', '1203612829'),
+	('Митрофан','Распутин','12052382953'),
+	('Игорь','Баранов','11048723934'),
+	('Яков','Орлов','8803354'),
+	('Синтия','Шмидт','3482120'),
+	('Angela','Smith','1203612829');
